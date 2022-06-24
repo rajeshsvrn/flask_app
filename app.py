@@ -9,10 +9,10 @@ mysql = MySQL()
 app = Flask(__name__)
 
 # MySQL configurations
-app.config['MYSQL_DATABASE_USER'] = 'dbadmin'
-app.config['MYSQL_DATABASE_PASSWORD'] = 'Welcome1w'
-app.config['MYSQL_DATABASE_DB'] = 'BucketList'
-app.config['MYSQL_DATABASE_HOST'] = 'practice-db1.cfnddna9bil3.us-west-2.rds.amazonaws.com'
+app.config['MYSQL_DATABASE_USER'] = '<database username>'
+app.config['MYSQL_DATABASE_PASSWORD'] = '<password>'
+app.config['MYSQL_DATABASE_DB'] = '<database name>'
+app.config['MYSQL_DATABASE_HOST'] = '<rds endpoint>'
 mysql.init_app(app)
 
 
